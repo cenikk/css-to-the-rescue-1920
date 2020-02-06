@@ -2,15 +2,13 @@
 
 _This course is in English_
 
-In this three week course you are going to create an innovative, experimantal, yet pleasurable user experience by using CSS and SVG. No Javascrpt allowed.
+In this three week course I am going to create an innovative, experimantal, yet pleasurable user experience by using CSS and SVG. No Javascrpt allowed.
 
 ## Learning goals
-- _You understand the broader scope of CSS: You can show that CSS can be used for more than just styling web pages._
-- _You understand the progressive enhancement parts of CSS: You can show that you can use the cascade, inheritance and specificity in your project_
-- _You understand the interactive parts of CSS: Is the UX fully enhanced within in given CSS scope?_
-- _You have been experimenting: Have the learning goals been stretched?_
-
-[Rubric](https://docs.google.com/spreadsheets/d/1Xv48MSiACNmnM6nXpGGUb8mJDC459uSaxJszO_zLEp8/edit?usp=sharing)
+- _I understand the broader scope of CSS: I can show that CSS can be used for more than just styling web pages._
+- _I understand the progressive enhancement parts of CSS: I can show that I can use the cascade, inheritance and specificity in Ir project_
+- _I understand the interactive parts of CSS: Is the UX fully enhanced within in given CSS scope?_
+- _I have been experimenting: Have the learning goals been stretched?_
 
 ## Programm
 
