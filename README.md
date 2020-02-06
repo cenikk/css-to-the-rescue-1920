@@ -28,15 +28,11 @@ Goals of this week:
 
 ### Week 2 - Create Stuff, 🙃 Smile 
 
-This week’s goals: Moar inspiration, create stuff, break stuff, and learn from each other.
-
 <!-- [Opdrachten](https://drive.google.com/open?id=1GMDTdW3LycAYpZSFI6gk_lrKrx8-zLWrNh69aaVEH5Y) -->
 
 <!-- [Slides](https://drive.google.com/open?id=1IqQeu1m0dQiSC_KCvrn8eencAgtYe7X6qT-gm0n9Bmc) -->
 
 ### Week 3 - 🎪 Show time
-
-Goals: Blow us away.
 
 <!-- [Opdrachten](https://drive.google.com/open?id=13pKQu72pshaEzKw9q5JHLa-aop85nMP6nDCdqioWjoQ) -->
 
