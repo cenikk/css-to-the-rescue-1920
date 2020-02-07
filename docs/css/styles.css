@@ -6,7 +6,7 @@ html, body {
   font-family: 'Moon';
   margin: 0; padding: 0;
   box-sizing: border-box;
-  background-color: #02203C;
+  background: linear-gradient(125deg, #00103a 0%, #3e5f77 100%);
   color: var(--white);
   overflow: hidden;
 }
@@ -27,6 +27,10 @@ h3, p {
   margin: .1rem 0;
 }
 
+p {
+  color: #b5b5b5;
+}
+
 section {
   max-width: 35%;
   display: inline-grid;
@@ -44,6 +48,13 @@ ul li {
   grid-gap: 4rem;
 }
 
+.stars {
+  position: relative;
+  top: 15rem;
+  background: linear-gradient(125deg, #00103a 0%, #3e5f77 100%);
+  transform: rotateZ(45deg);
+}
+
 .stars > div {
   position: absolute;
   width: 4px;
@@ -54,25 +65,149 @@ ul li {
   background: rgba(255, 255, 255, 0.7);
 }
 
-.stars div:nth-child(1) {
-  left: 16rem;
-  top: 4rem;
+
+.stars div:nth-child(1) { left: 16rem; top: 4rem; }
+.stars div:nth-child(2) { left: 20rem; top: 5rem; }
+.stars div:nth-child(3) { 
+  left: 21rem; top: 4.5rem;
+  animation: tail 3s ease-in-out 1, shooting 3s ease-in-out 1;
+  animation-delay: 2600ms;
+}
+.stars div:nth-child(4) { left: 24rem; top: 3.5rem; }
+.stars div:nth-child(5) { left: 22rem; top: 7rem; }
+.stars div:nth-child(6) { 
+  left: 27rem; top: 2rem; 
+  animation: tail 3s ease-in-out 1, shooting 3s ease-in-out 1;
+  animation-delay: 8600ms;
+}
+.stars div:nth-child(7) { left: 28rem; top: 3rem; }
+
+.stars div:nth-child(3)::before, .stars div:nth-child(3)::after {
+  position: absolute;
+  content: '';
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #ffffffb3, rgba(0, 0, 255, 0));
+  border-radius: 100%;
+  transform: translateX(50%) rotateZ(45deg);
+  animation: shining 3000ms ease-in-out 1;
+  animation-delay: 2600ms;
 }
 
-.stars div:nth-child(2) {
-  left: 20rem;
-  top: 5rem;
+.stars div:nth-child(3)::after {
+  transform: translateX(50%) rotateZ(-45deg);
 }
 
-.stars div:nth-child(3) {
-  left: 21rem;
-  top: 4.5rem;
-}
 
+/* The moon */
 .moon {
   height: 100vh;
   width: 100vw;
-  background: #0267A4;
+  background: #92A8D7;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
 }
+
+/* Spaceman */
+.spaceman {
+	position: absolute;
+  width: 30rem;
+  height: 30rem;
+	top: 5rem;
+  right: -3rem;
+	animation: float 3s infinite alternate ease-in-out;
+}
+
+.head {
+  position: absolute;
+  z-index: 999;
+  top: .5rem;
+  left: 5rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--white);
+  border-radius: 50% 50% 3.750rem 3.750rem;
+}
+
+.head__glass {
+  background: linear-gradient(93deg, #00103a -20%, #3e5f77 110%);
+  width: 79%;
+  height: 84%;
+  margin: auto;
+  top: 1rem;
+  position: relative;
+  border-radius: 57% 56% 60% 60%;
+  transform: rotateZ(45deg);
+}
+
+.glass__reflection {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #cecece;
+  border-radius: 50%;
+  position: absolute;
+  left: 6rem;
+  top: 3.8rem;
+}
+
+
+
+
+
+/* Animations */
+
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+  
+  30% {
+    width: 100px;
+  }
+  
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shooting {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(320px);
+  }
+}
+
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(-1.5em, 4em);
+  }
+}
+
+/* 
+
+Questions:
+1. Best way to put stars in the website?
+2. Why should I use Sass?
+3. Am I allowed to have straight line text?
+4. Which way of coding do you prefer? (Utility, Bem)
+5. Responsiveness with position: absolute elements?
+
+*/
